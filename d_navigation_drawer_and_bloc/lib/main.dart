@@ -131,4 +131,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+
+  @override
+  void dispose() {
+    sharedBlue.close();
+    sharedGreen.close();
+    sharedRed.close();
+    super.dispose();
+  }
 }
